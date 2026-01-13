@@ -7,7 +7,6 @@ import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import Header from '@/components/Header';
 import InlineReadAloud from '@/components/InlineReadAloud';
 import HorizontalLessonViewer from '@/components/lesson/HorizontalLessonViewer';
 import { FloatingDesmosCalculator } from '@/components/interactive/FloatingDesmosCalculator';
@@ -73,7 +72,6 @@ const StudentLessonPage = () => {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <div className="max-w-4xl mx-auto px-4 py-8">
           <div className="flex items-center justify-center min-h-[400px]">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
@@ -86,7 +84,6 @@ const StudentLessonPage = () => {
   if (error || !lesson) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <div className="max-w-4xl mx-auto px-4 py-8">
           <Alert variant="destructive">
             <AlertCircle className="h-4 w-4" />
@@ -123,7 +120,6 @@ const StudentLessonPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       
       {/* Teacher Preview Notice Banner - Only visible to teachers */}
       {isTeacher && (

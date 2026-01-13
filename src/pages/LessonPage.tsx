@@ -3,7 +3,6 @@ import React, { Suspense, lazy } from 'react';
 import { useParams } from 'react-router-dom';
 import { AlertCircle, Loader2 } from 'lucide-react';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import Header from '@/components/Header';
 import LessonHeader from '@/components/lesson/LessonHeader';
 import LessonControls from '@/components/lesson/LessonControls';
 import LessonSkeleton from '@/components/lesson/LessonSkeleton';
@@ -54,7 +53,6 @@ const LessonPage = () => {
   if (essentialLoading) {
     return (
       <div className="min-h-screen bg-white">
-        <Header />
         <div className="max-w-4xl mx-auto px-4 py-8">
           <div className="flex items-center justify-center min-h-[400px]">
             <div className="flex flex-col items-center gap-4">
@@ -82,7 +80,6 @@ const LessonPage = () => {
     
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
-        <Header />
         <div className="max-w-4xl mx-auto px-4 py-8">
           <Alert variant="destructive">
             <AlertCircle className="h-4 w-4" />
@@ -116,7 +113,6 @@ const LessonPage = () => {
     return (
       <RealTimeTranslationProvider>
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
-          <Header />
           <MobileOptimizedLayout>
             <div className="max-w-6xl mx-auto px-4 py-8">
               <Suspense fallback={<LessonSkeleton type="full" />}>

@@ -6,7 +6,6 @@ import { useStudentGrades } from '@/hooks/useStudentGrades';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import Header from '@/components/Header';
 import { 
   BookOpen, 
   ClipboardList, 
@@ -52,7 +51,6 @@ export default function StudentDashboard() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <main className="container mx-auto p-6 space-y-8">
         {/* Welcome Section */}
         <div className="space-y-2">

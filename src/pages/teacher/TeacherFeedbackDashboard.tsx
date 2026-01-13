@@ -47,7 +47,6 @@ import {
   Send,
   RefreshCw
 } from 'lucide-react';
-import Header from '@/components/Header';
 
 interface Submission {
   id: string;
@@ -332,7 +331,6 @@ export default function TeacherFeedbackDashboard() {
   if (loading) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <div className="p-8">
           <div className="max-w-7xl mx-auto space-y-6">
             <Skeleton className="h-10 w-96" />
@@ -352,7 +350,6 @@ export default function TeacherFeedbackDashboard() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <div className="p-8">
       <div className="max-w-7xl mx-auto space-y-6">
         <div>

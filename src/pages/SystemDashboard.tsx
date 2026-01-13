@@ -1,6 +1,5 @@
 import { useSystemAdmin } from '@/hooks/useSystemAdmin';
 import { Navigate } from 'react-router-dom';
-import Header from '@/components/Header';
 import { SystemModeBadge } from '@/components/system/SystemModeBadge';
 import { SystemOverview } from '@/components/system/SystemOverview';
 import { SystemActionsPanel } from '@/components/system/SystemActionsPanel';
@@ -19,7 +18,6 @@ const SystemDashboard = () => {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <div className="p-8 max-w-7xl mx-auto">
           <Skeleton className="h-12 w-64 mb-6" />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-6">
@@ -38,7 +36,6 @@ const SystemDashboard = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       
       <div className="p-8 max-w-7xl mx-auto">
         {/* Header with System Mode Badge */}

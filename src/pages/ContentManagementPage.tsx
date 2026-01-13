@@ -2,7 +2,6 @@ import React from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { Navigate } from 'react-router-dom';
 import ContentLibrary from '@/components/content/ContentLibrary';
-import Header from '@/components/Header';
 import { HelpHint } from '@/components/common/HelpHint';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 
@@ -15,7 +14,6 @@ const ContentManagementPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <div className="container mx-auto px-4 py-8">
         <Breadcrumbs
           items={[

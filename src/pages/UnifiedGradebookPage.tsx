@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, GraduationCap } from 'lucide-react';
 import SimpleGradebook from '@/components/teacher/SimpleGradebook';
 import { useSearchParams } from 'react-router-dom';
-import Header from '@/components/Header';
 
 const UnifiedGradebookPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -11,7 +10,6 @@ const UnifiedGradebookPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex items-center mb-6">

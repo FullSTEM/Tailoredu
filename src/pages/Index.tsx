@@ -1,23 +1,17 @@
 
-import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import CoreTracks from "@/components/CoreTracks";
 import Testimonials from "@/components/Testimonials";
-import Footer from "@/components/Footer";
 import { GraduationCap, Users, BookOpen, ArrowRight, Volume2 } from "lucide-react";
 
 const Index = () => {
-  const { user } = useAuth();
-
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       <Hero />
       
       {/* Demo Showcase Section */}
@@ -143,7 +137,6 @@ const Index = () => {
       <HowItWorks />
       <CoreTracks />
       <Testimonials />
-      <Footer />
     </div>
   );
 };

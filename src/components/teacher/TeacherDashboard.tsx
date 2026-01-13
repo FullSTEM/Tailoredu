@@ -6,7 +6,6 @@ import { Loader2, Users, BookOpen, ClipboardList } from 'lucide-react';
 import { useTeacherProfileSimplified } from '@/hooks/useTeacherProfileSimplified';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from '@/hooks/use-toast';
-import Header from '@/components/Header';
 import { ClassesList } from './dashboard/ClassesList';
 import { QuickActions } from './dashboard/QuickActions';
 
@@ -141,7 +140,6 @@ const TeacherDashboard = () => {
   if (profileLoading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-        <Header />
         <div className="flex items-center justify-center min-h-[60vh]">
           <div className="text-center">
             <Loader2 className="h-12 w-12 animate-spin text-indigo-600 mx-auto mb-4" />
@@ -156,7 +154,6 @@ const TeacherDashboard = () => {
   if (!profile && !profileLoading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-        <Header />
         <div className="flex items-center justify-center min-h-[60vh]">
           <Card className="max-w-md">
             <CardHeader>
@@ -178,7 +175,6 @@ const TeacherDashboard = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       <div className="container mx-auto p-6 space-y-6">
         {/* Welcome Header with Inline Metrics */}
         <div className="space-y-4">

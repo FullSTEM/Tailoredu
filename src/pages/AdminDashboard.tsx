@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Header from '@/components/Header';
 import { useAuth } from '@/contexts/AuthContext';
 import { useAdminProfile } from '@/hooks/useAdminProfile';
 import { supabase } from '@/integrations/supabase/client';
@@ -41,7 +40,6 @@ const AdminDashboard = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-white">
-        <Header />
         <div className="flex items-center justify-center min-h-[60vh]">
           <div className="text-lg">Loading...</div>
         </div>
@@ -65,7 +63,6 @@ const AdminDashboard = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
         {renderDashboard()}

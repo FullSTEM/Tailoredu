@@ -6,7 +6,6 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Code, Users, FileText, Settings, Shield, Database, Plus, AlertTriangle, Zap, Activity, DollarSign } from 'lucide-react';
-import Header from '@/components/Header';
 import UserImpersonation from '@/components/developer/UserImpersonation';
 import ImpersonationLogs from '@/components/developer/ImpersonationLogs';
 import ImpersonationBanner from '@/components/developer/ImpersonationBanner';
@@ -37,7 +36,6 @@ const DeveloperDashboard = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <ImpersonationBanner />
       
       <div className="container mx-auto px-4 py-8">
