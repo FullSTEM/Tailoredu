@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
-import Header from '@/components/Header';
 import DemoReadAloud from '@/components/DemoReadAloud';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import { Sparkles, Volume2, Mic } from 'lucide-react';
@@ -12,7 +11,6 @@ const ComponentsPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="mb-8">
           <div className="flex items-center justify-between mb-6">

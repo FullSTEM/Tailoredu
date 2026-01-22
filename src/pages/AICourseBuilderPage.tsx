@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
-import Header from '@/components/Header';
 import { HelpHint } from '@/components/common/HelpHint';
 import BuildClassHeader from '@/components/build-class/BuildClassHeader';
 import BuildClassTabs from '@/components/build-class/BuildClassTabs';
@@ -236,7 +235,6 @@ const AICourseBuilderPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-6">

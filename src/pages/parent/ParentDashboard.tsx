@@ -7,7 +7,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Loader2 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Header from "@/components/Header";
 import ParentStudentOverview from "@/components/parent/ParentStudentOverview";
 import ParentFeedbackSection from "@/components/parent/ParentFeedbackSection";
 import ParentAiInsights from "@/components/parent/ParentAiInsights";
@@ -202,7 +201,6 @@ const ParentDashboard = () => {
   if (!studentData) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <div className="p-8">
           <Card>
             <CardHeader>
@@ -222,7 +220,6 @@ const ParentDashboard = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <div className="p-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-6">

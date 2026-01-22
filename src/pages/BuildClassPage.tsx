@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import Header from '@/components/Header';
 import { HelpHint } from '@/components/common/HelpHint';
 import BuildClassHeader from '@/components/build-class/BuildClassHeader';
 import BuildClassTabs from '@/components/build-class/BuildClassTabs';
@@ -339,7 +338,6 @@ const BuildClassPage = () => {
   if (isLoading && classId) {
     return (
       <div className="min-h-screen bg-gray-50">
-        <Header />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center justify-center">
             <div className="text-lg">Loading class data...</div>
@@ -351,7 +349,6 @@ const BuildClassPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex items-center gap-2 mb-4">

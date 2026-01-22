@@ -12,7 +12,6 @@ import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { CheckCircle, GraduationCap, Loader2 } from 'lucide-react';
-import Header from '@/components/Header';
 
 const TeacherOnboarding = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -132,7 +131,6 @@ const TeacherOnboarding = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       <div className="max-w-2xl mx-auto p-4">
         <Card className="shadow-xl">
           <CardHeader className="text-center">

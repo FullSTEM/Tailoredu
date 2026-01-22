@@ -8,7 +8,6 @@ import { Separator } from '@/components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ArrowLeft, User, BookOpen, GraduationCap, Languages, Brain, Settings, Target, Sparkles, MessageSquare, TrendingUp, Mail, Users } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
-import Header from '@/components/Header';
 import { StudentGoalsSection } from '@/components/teacher/student-detail/StudentGoalsSection';
 import { StudentInsightsSection } from '@/components/teacher/student-detail/StudentInsightsSection';
 import { StudentReflectionsSection } from '@/components/teacher/student-detail/StudentReflectionsSection';
@@ -90,7 +89,6 @@ export default function StudentDetailPage() {
   if (studentLoading) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <div className="container mx-auto p-8">
           <div className="max-w-7xl mx-auto space-y-6">
             <Skeleton className="h-10 w-48" />
@@ -104,7 +102,6 @@ export default function StudentDetailPage() {
   if (!student) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <div className="container mx-auto p-8">
           <Card>
             <CardContent className="pt-6">
@@ -132,7 +129,6 @@ export default function StudentDetailPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <div className="container mx-auto p-8">
         <div className="max-w-7xl mx-auto space-y-6">
           {/* Header */}

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useToast } from '@/components/ui/use-toast';
+import { useToast } from '@/hooks/use-toast';
 import { useParentProfile } from './useParentProfile';
 import { useStudentProgress } from './useStudentProgress';
 import { useParentMessages } from './useParentMessages';

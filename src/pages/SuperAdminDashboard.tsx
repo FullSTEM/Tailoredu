@@ -7,7 +7,6 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Shield, Database, Users, Activity, FileText, Settings } from 'lucide-react';
 import { Navigate } from 'react-router-dom';
-import Header from '@/components/Header';
 
 const SuperAdminDashboard: React.FC = () => {
   const { isSuperAdmin, loading } = useSuperAdmin();
@@ -26,7 +25,6 @@ const SuperAdminDashboard: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <div className="p-6 space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between">
